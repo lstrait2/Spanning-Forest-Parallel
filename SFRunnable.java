@@ -48,7 +48,7 @@ public class SFRunnable implements Runnable
 
 		Graph.Edge e = this.edges.get(i);
 
-		if(e.u.index > e.v.index)
+		if(e.u.index < e.v.index)
 		{
 			synchronized(e.v)
 			{
@@ -117,7 +117,7 @@ public class SFRunnable implements Runnable
 					buildSF(e,i,u_ancestors,v_ancestors,newAncestors,nextAncestor_u,v_ancestor);
 				}
 			}
-			else if(nextAncestor_u.index > nextAncestor_v.index)
+			else if(nextAncestor_u.index < nextAncestor_v.index)
 			{
 				synchronized(nextAncestor_v)
 				{
