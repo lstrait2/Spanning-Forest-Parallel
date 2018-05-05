@@ -101,7 +101,6 @@ public class SFRunnable implements Runnable
 		}
 		else
 		{
-
 			if(nextAncestor_u == u_ancestor)
 			{
 				synchronized(nextAncestor_v)
@@ -132,16 +131,6 @@ public class SFRunnable implements Runnable
 				}
 
 			}
-
 		}
 	}
-
-
-
-
-
-
-
-
-
 }
