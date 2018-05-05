@@ -7,7 +7,6 @@ public class SFRunnable2 implements Runnable
 	private Graph.Node[] u_ancestors;
 	private Graph.Node[] v_ancestors;
 
-
 	public SFRunnable2(int start, int end, Graph.Node[] u_ancestors, Graph.Node[] v_ancestors,ArrayList<Graph.Edge> edges)
 	{
 		this.start_idx = start;
@@ -23,8 +22,6 @@ public class SFRunnable2 implements Runnable
 		{
 			buildSF(i);
 		}
-
-
 	}
 
 	private void buildSF(int i)
@@ -41,9 +38,4 @@ public class SFRunnable2 implements Runnable
 
                 }
         }
-
-
-
-
 }
-
