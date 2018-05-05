@@ -76,9 +76,4 @@ class parallel_SF
 		countSF(g.edges);
 
 	}
-
-
-
-
-
 }
